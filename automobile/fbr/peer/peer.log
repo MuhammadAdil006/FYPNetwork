@@ -1,0 +1,1 @@
+[31m2022-12-28 06:14:40.841 UTC [main] InitCmd -> ERRO 001[0m Cannot run peer because cannot init crypto, specified path "/vagrant/automobile/client/fbr/peer/msp" does not exist or cannot be accessed: stat /vagrant/automobile/client/fbr/peer/msp: no such file or directory

@@ -1,0 +1,4 @@
+now  set the environment for admin
+
+go to set-env-for-admin.sh and copy paste all commands just after running peer
+also change organization name if neccesssary

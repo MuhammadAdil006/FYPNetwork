@@ -1,0 +1,9 @@
+#setup of local msp folder manually
+msp
+Make 3 subfolders in all organization e.g i am doing for excise
+Make subfolder named  msp in excise
+Make 3 more subfolder named cacerts,admincerts,keystore
+Copy ./server/ca-cert.pem to excise/cacerts/ 
+Copy excise/admin/msp/signcerts/cert.pem to  excise/msp/admincerts/
+
+do this for all organizations

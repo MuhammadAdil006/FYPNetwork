@@ -1,0 +1,13 @@
+setting up the peer and application channel 
+ bash ./generate-channel-tx.sh
+
+ it will generate the channel file.
+ set-identity set the identity for peer commands
+
+ bash ./sign-channel-tx.sh excise
+ bash ./sign-channel-tx.sh fbr
+ it will sign the channel tx
+
+ bash ./submit-create-channel.sh excise admin
+ it will submit channel to orderer for its initilization.
+ 

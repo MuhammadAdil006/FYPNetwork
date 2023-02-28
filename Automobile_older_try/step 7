@@ -1,0 +1,9 @@
+anchor peer creationo and joining the channel
+
+bash ./register-enroll-peer.sh excise excise-peer
+
+bash ./register-enroll-peer.sh manufacturer manufacturer-peer
+
+manually copy fabric-ca-client-yaml files
+bash ./register-enroll-peer.sh fbr fbr-peer
+

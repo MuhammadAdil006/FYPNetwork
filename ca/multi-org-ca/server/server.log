@@ -1,0 +1,28 @@
+2022/11/26 15:01:14 [INFO] Configuration file location: /vagrant/ca/multi-org-ca/server/fabric-ca-server-config.yaml
+2022/11/26 15:01:14 [INFO] Starting server in home directory: /vagrant/ca/multi-org-ca/server
+2022/11/26 15:01:14 [WARNING] Unknown provider type: ; metrics disabled
+2022/11/26 15:01:14 [INFO] Server Version: 1.4.6
+2022/11/26 15:01:14 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+2022/11/26 15:01:14 [INFO] The CA key and certificate already exist
+2022/11/26 15:01:14 [INFO] The key is stored by BCCSP provider 'SW'
+2022/11/26 15:01:14 [INFO] The certificate is at: /vagrant/ca/multi-org-ca/server/ca-cert.pem
+2022/11/26 15:01:14 [INFO] Initialized sqlite3 database at /vagrant/ca/multi-org-ca/server/fabric-ca-server.db
+2022/11/26 15:01:14 [INFO] The Idemix issuer public and secret key files already exist
+2022/11/26 15:01:14 [INFO]    secret key file location: /vagrant/ca/multi-org-ca/server/msp/keystore/IssuerSecretKey
+2022/11/26 15:01:14 [INFO]    public key file location: /vagrant/ca/multi-org-ca/server/IssuerPublicKey
+2022/11/26 15:01:14 [INFO] The Idemix issuer revocation public and secret key files already exist
+2022/11/26 15:01:14 [INFO]    private key file location: /vagrant/ca/multi-org-ca/server/msp/keystore/IssuerRevocationPrivateKey
+2022/11/26 15:01:14 [INFO]    public key file location: /vagrant/ca/multi-org-ca/server/IssuerRevocationPublicKey
+2022/11/26 15:01:14 [INFO] Home directory for default CA: /vagrant/ca/multi-org-ca/server
+2022/11/26 15:01:14 [INFO] Operation Server Listening on [::]:34663
+2022/11/26 15:01:14 [INFO] Listening on http://0.0.0.0:7054
+2022/11/26 15:01:26 [INFO] signed certificate with serial number 418391266428492599290089444904029307968937737850
+2022/11/26 15:01:26 [INFO] [::1]:37692 POST /enroll 201 0 "OK"
+2022/11/26 15:09:55 [INFO] [::1]:37694 POST /register 500 0 "Registration of 'Excise-admin' failed in affiliation validation: Failed getting affiliation 'Excise': : scode: 404, code: 63, msg: Failed to get Affiliation: sql: no rows in result set"
+2022/11/26 15:09:55 [INFO] [::1]:37696 POST /register 500 0 "Registration of 'Fbr-admin' failed in affiliation validation: Failed getting affiliation 'Fbr': : scode: 404, code: 63, msg: Failed to get Affiliation: sql: no rows in result set"
+2022/11/26 15:09:55 [INFO] [::1]:37698 POST /register 201 0 "OK"
+2022/11/26 15:09:55 [INFO] [::1]:37700 POST /register 500 0 "Registration of 'Manufacturer-admin' failed in affiliation validation: Failed getting affiliation 'Manufacturer': : scode: 404, code: 63, msg: Failed to get Affiliation: sql: no rows in result set"
+2022/11/26 15:09:55 [INFO] [::1]:37702 POST /enroll 401 23 "Failed to get user: : scode: 404, code: 63, msg: Failed to get User: sql: no rows in result set"
+2022/11/26 15:09:56 [INFO] [::1]:37704 POST /enroll 401 23 "Failed to get user: : scode: 404, code: 63, msg: Failed to get User: sql: no rows in result set"
+2022/11/26 15:09:56 [INFO] signed certificate with serial number 163281400436634080483036546851349558703460388968
+2022/11/26 15:09:56 [INFO] [::1]:37706 POST /enroll 201 0 "OK"

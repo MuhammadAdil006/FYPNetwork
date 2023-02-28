@@ -1,0 +1,27 @@
+2022/12/27 13:21:46 [INFO] Configuration file location: /vagrant/automobile/server/fabric-ca-server-config.yaml
+2022/12/27 13:21:46 [INFO] Starting server in home directory: /vagrant/automobile/server
+2022/12/27 13:21:46 [WARNING] Unknown provider type: ; metrics disabled
+2022/12/27 13:21:46 [INFO] Server Version: 1.4.6
+2022/12/27 13:21:46 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+2022/12/27 13:21:46 [INFO] The CA key and certificate already exist
+2022/12/27 13:21:46 [INFO] The key is stored by BCCSP provider 'SW'
+2022/12/27 13:21:46 [INFO] The certificate is at: /vagrant/automobile/server/ca-cert.pem
+2022/12/27 13:21:46 [INFO] Initialized sqlite3 database at /vagrant/automobile/server/fabric-ca-server.db
+2022/12/27 13:21:46 [INFO] The Idemix issuer public and secret key files already exist
+2022/12/27 13:21:46 [INFO]    secret key file location: /vagrant/automobile/server/msp/keystore/IssuerSecretKey
+2022/12/27 13:21:46 [INFO]    public key file location: /vagrant/automobile/server/IssuerPublicKey
+2022/12/27 13:21:46 [INFO] The Idemix issuer revocation public and secret key files already exist
+2022/12/27 13:21:46 [INFO]    private key file location: /vagrant/automobile/server/msp/keystore/IssuerRevocationPrivateKey
+2022/12/27 13:21:46 [INFO]    public key file location: /vagrant/automobile/server/IssuerRevocationPublicKey
+2022/12/27 13:21:46 [INFO] Home directory for default CA: /vagrant/automobile/server
+2022/12/27 13:21:46 [INFO] Operation Server Listening on [::]:40959
+2022/12/27 13:21:46 [INFO] Listening on http://0.0.0.0:7054
+2022/12/27 13:23:15 [INFO] [::1]:34720 POST /register 201 0 "OK"
+2022/12/27 13:23:15 [INFO] signed certificate with serial number 465232641379276374745864400859173376385476880527
+2022/12/27 13:23:15 [INFO] [::1]:34722 POST /enroll 201 0 "OK"
+2022/12/27 13:23:23 [INFO] [::1]:34724 POST /register 500 0 "Registration of 'peer1' failed: Identity 'peer1' is already registered"
+2022/12/27 13:23:23 [INFO] signed certificate with serial number 415334526384243204032423721456122914280062007229
+2022/12/27 13:23:23 [INFO] [::1]:34726 POST /enroll 201 0 "OK"
+2022/12/27 13:23:36 [INFO] [::1]:34728 POST /register 500 0 "Registration of 'peer1' failed: Identity 'peer1' is already registered"
+2022/12/27 13:23:37 [INFO] signed certificate with serial number 96663361695403640987094191414923951700544362356
+2022/12/27 13:23:37 [INFO] [::1]:34730 POST /enroll 201 0 "OK"

@@ -1,0 +1,8 @@
+joining the channel
+you first need 
+bash ./launch.sh  #running up the orderer
+then bash ./launch-peer.sh excise excise-peer 
+//to launch the peer
+
+bash ./join-automobile-channel.sh excise excise-peer
+

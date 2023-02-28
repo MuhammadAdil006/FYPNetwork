@@ -1,0 +1,6 @@
+orderer setup
+
+setup configtx yaml file
+setup orderer.yaml file
+
+./generate genesis block

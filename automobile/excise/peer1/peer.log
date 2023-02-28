@@ -1,0 +1,75 @@
+[34m2022-12-27 14:50:58.460 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+ Version: 2.1.1
+ Commit SHA: 6393adbb2
+ Go version: go1.14.1
+ OS/Arch: linux/amd64
+ Chaincode:
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+[34m2022-12-27 14:50:58.461 UTC [peer] getLocalAddress -> INFO 002[0m Auto-detected peer address: 10.0.2.15:7055
+[34m2022-12-27 14:50:58.462 UTC [peer] getLocalAddress -> INFO 003[0m Host is 0.0.0.0 , falling back to auto-detected address: 10.0.2.15:7055
+[34m2022-12-27 14:50:58.491 UTC [ledgermgmt] NewLedgerMgr -> INFO 004[0m Initializing LedgerMgr
+[34m2022-12-27 14:50:58.503 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 005[0m DB is empty Setting db format as 2.0
+[34m2022-12-27 14:50:58.503 UTC [fsblkstorage] NewProvider -> INFO 006[0m Creating new file ledger directory at /vagrant/automobile/client/excise/ledger/ledgersData/chains/chains
+[34m2022-12-27 14:50:58.511 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 007[0m DB is empty Setting db format as 2.0
+[34m2022-12-27 14:50:58.523 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 008[0m DB is empty Setting db format as 2.0
+[34m2022-12-27 14:50:58.523 UTC [ledgermgmt] NewLedgerMgr -> INFO 009[0m Initialized LedgerMgr
+[34m2022-12-27 14:50:58.530 UTC [gossip.service] New -> INFO 00a[0m Initialize gossip with endpoint 10.0.2.15:7055
+[34m2022-12-27 14:50:58.531 UTC [gossip.gossip] New -> INFO 00b[0m Creating gossip service with self membership of Endpoint: , InternalEndpoint: 10.0.2.15:7055, PKI-ID: d072a4cf413cbbe25f2536487310ddab38bd7fd27a6bf3785a5c4ea45dbde5c5, Metadata: 
+[33m2022-12-27 14:50:58.531 UTC [gossip.gossip] New -> WARN 00c[0m External endpoint is empty, peer will not be accessible outside of its organization
+[34m2022-12-27 14:50:58.532 UTC [gossip.gossip] start -> INFO 00d[0m Gossip instance 10.0.2.15:7055 started
+[34m2022-12-27 14:50:58.533 UTC [lifecycle] InitializeLocalChaincodes -> INFO 00e[0m Initialized lifecycle cache with 0 already installed chaincodes
+[34m2022-12-27 14:50:58.533 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00f[0m Entering computeChaincodeEndpoint with peerHostname: 10.0.2.15
+[34m2022-12-27 14:50:58.533 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 010[0m Exit with ccEndpoint: 127.0.0.1:7052
+[33m2022-12-27 14:50:58.533 UTC [nodeCmd] createChaincodeServer -> WARN 011[0m peer.chaincodeListenAddress is not set, using 10.0.2.15:7052
+[34m2022-12-27 14:50:58.537 UTC [sccapi] DeploySysCC -> INFO 012[0m deploying system chaincode 'lscc'
+[34m2022-12-27 14:50:58.537 UTC [sccapi] DeploySysCC -> INFO 013[0m deploying system chaincode 'cscc'
+[34m2022-12-27 14:50:58.537 UTC [sccapi] DeploySysCC -> INFO 014[0m deploying system chaincode 'qscc'
+[34m2022-12-27 14:50:58.537 UTC [sccapi] DeploySysCC -> INFO 015[0m deploying system chaincode '_lifecycle'
+[34m2022-12-27 14:50:58.537 UTC [nodeCmd] serve -> INFO 016[0m Deployed system chaincodes
+[34m2022-12-27 14:50:58.538 UTC [discovery] NewService -> INFO 017[0m Created with config TLS: false, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[34m2022-12-27 14:50:58.538 UTC [nodeCmd] registerDiscoveryService -> INFO 018[0m Discovery service activated
+[34m2022-12-27 14:50:58.538 UTC [nodeCmd] serve -> INFO 019[0m Starting peer with ID=[peer1], network ID=[dev], address=[10.0.2.15:7055]
+[34m2022-12-27 14:50:58.538 UTC [nodeCmd] serve -> INFO 01a[0m Started peer with ID=[peer1], network ID=[dev], address=[10.0.2.15:7055]
+[34m2022-12-27 14:50:58.538 UTC [kvledger] LoadPreResetHeight -> INFO 01b[0m Loading prereset height from path [/vagrant/automobile/client/excise/ledger/ledgersData/chains]
+[34m2022-12-27 14:50:58.538 UTC [fsblkstorage] preResetHtFiles -> INFO 01c[0m No active channels passed
+[34m2022-12-27 14:51:21.010 UTC [ledgermgmt] CreateLedger -> INFO 01d[0m Creating ledger [automobilechannel] with genesis block
+[34m2022-12-27 14:51:21.012 UTC [fsblkstorage] newBlockfileMgr -> INFO 01e[0m Getting block information from block storage
+[34m2022-12-27 14:51:21.014 UTC [kvledger] CommitLegacy -> INFO 01f[0m [automobilechannel] Committed block [0] with 1 transaction(s) in 1ms (state_validation=0ms block_and_pvtdata_commit=0ms state_commit=0ms) commitHash=[]
+[34m2022-12-27 14:51:21.014 UTC [ledgermgmt] CreateLedger -> INFO 020[0m Created ledger [automobilechannel] with genesis block
+[34m2022-12-27 14:51:21.017 UTC [gossip.gossip] JoinChan -> INFO 021[0m Joining gossip network of channel automobilechannel with 3 organizations
+[34m2022-12-27 14:51:21.017 UTC [gossip.gossip] learnAnchorPeers -> INFO 022[0m No configured anchor peers of FbrMSP for channel automobilechannel to learn about
+[34m2022-12-27 14:51:21.017 UTC [gossip.gossip] learnAnchorPeers -> INFO 023[0m No configured anchor peers of ExciseMSP for channel automobilechannel to learn about
+[34m2022-12-27 14:51:21.017 UTC [gossip.gossip] learnAnchorPeers -> INFO 024[0m No configured anchor peers of ManufacturerMSP for channel automobilechannel to learn about
+[34m2022-12-27 14:51:21.019 UTC [gossip.state] NewGossipStateProvider -> INFO 025[0m Updating metadata information for channel automobilechannel, current ledger sequence is at = 0, next expected block is = 1
+[34m2022-12-27 14:51:21.020 UTC [endorser] callChaincode -> INFO 026[0m finished chaincode: cscc duration: 14ms channel= txID=1e5a1a4f
+[34m2022-12-27 14:51:21.020 UTC [comm.grpc.server] 1 -> INFO 027[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:58514 grpc.code=OK grpc.call_duration=16.637815ms
+[34m2022-12-27 14:51:27.020 UTC [gossip.election] beLeader -> INFO 028[0m d072a4cf413cbbe25f2536487310ddab38bd7fd27a6bf3785a5c4ea45dbde5c5 : Becoming a leader
+[34m2022-12-27 14:51:27.021 UTC [gossip.service] func1 -> INFO 029[0m Elected as a leader, starting delivery service for channel automobilechannel
+[34m2022-12-27 14:51:27.021 UTC [deliveryClient] StartDeliverForChannel -> INFO 02a[0m This peer will retrieve blocks from ordering service and disseminate to other peers in the organization for channel automobilechannel
+[33m2022-12-27 14:51:41.707 UTC [peer.blocksprovider] func1 -> WARN 02b[0m Encountered an error reading from deliver stream: rpc error: code = Unavailable desc = transport is closing channel=automobilechannel orderer-address=localhost:7050
+[33m2022-12-27 14:51:41.707 UTC [peer.blocksprovider] DeliverBlocks -> WARN 02c[0m Orderer hung up without sending status channel=automobilechannel orderer-address=localhost:7050
+[33m2022-12-27 14:51:41.809 UTC [peer.blocksprovider] DeliverBlocks -> WARN 02d[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:41.931 UTC [peer.blocksprovider] DeliverBlocks -> WARN 02e[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:42.077 UTC [peer.blocksprovider] DeliverBlocks -> WARN 02f[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:42.252 UTC [peer.blocksprovider] DeliverBlocks -> WARN 030[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:42.460 UTC [peer.blocksprovider] DeliverBlocks -> WARN 031[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:42.710 UTC [peer.blocksprovider] DeliverBlocks -> WARN 032[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:43.010 UTC [peer.blocksprovider] DeliverBlocks -> WARN 033[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:43.372 UTC [peer.blocksprovider] DeliverBlocks -> WARN 034[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:43.803 UTC [peer.blocksprovider] DeliverBlocks -> WARN 035[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:44.320 UTC [peer.blocksprovider] DeliverBlocks -> WARN 036[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:44.941 UTC [peer.blocksprovider] DeliverBlocks -> WARN 037[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:45.686 UTC [peer.blocksprovider] DeliverBlocks -> WARN 038[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:46.578 UTC [peer.blocksprovider] DeliverBlocks -> WARN 039[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:47.649 UTC [peer.blocksprovider] DeliverBlocks -> WARN 03a[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:48.934 UTC [peer.blocksprovider] DeliverBlocks -> WARN 03b[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[33m2022-12-27 14:51:50.476 UTC [peer.blocksprovider] DeliverBlocks -> WARN 03c[0m Could not connect to ordering service: could not dial endpoint 'localhost:7050': failed to create new connection: connection error: desc = "transport: error while dialing: dial tcp [::1]:7050: connect: connection refused" channel=automobilechannel
+[34m2022-12-27 14:51:51.265 UTC [nodeCmd] func1 -> INFO 03d[0m Received signal: 15 (terminated)
+[34m2022-12-27 14:51:51.265 UTC [gossip.service] Stop -> INFO 03e[0m Stopping chain automobilechannel
+[34m2022-12-27 14:51:51.265 UTC [gossip.service] Stop -> INFO 03f[0m Stopping leader election for automobilechannel
+[34m2022-12-27 14:51:51.266 UTC [gossip.gossip] Stop -> INFO 040[0m Stopping gossip
+[34m2022-12-27 14:51:51.267 UTC [gossip.discovery] Stop -> INFO 041[0m Stopping
+[34m2022-12-27 14:51:51.267 UTC [gossip.discovery] Stop -> INFO 042[0m Stopped
+[34m2022-12-27 14:51:51.267 UTC [gossip.comm] Stop -> INFO 043[0m Stopping
+[34m2022-12-27 14:51:51.267 UTC [gossip.comm] Stop -> INFO 044[0m Stopped

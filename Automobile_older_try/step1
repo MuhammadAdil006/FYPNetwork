@@ -1,0 +1,7 @@
+./server.sh start 
+#to start the server
+# you can check the server.log in server folder section
+
+./server.sh enroll 
+#to enroll the identitites
+#enrolling the fabric ca -client caserver identity 

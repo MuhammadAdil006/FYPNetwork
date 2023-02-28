@@ -1,0 +1,10 @@
+launching peer
+copy the core.yaml file to respective peer folders 
+bash ./launch-peer.sh excise peer1 7055
+
+bash ./launch-peer.sh fbr peer1 7060
+
+bash ./launch-peer.sh manufacturer peer1 7060
+
+checking which channel has joined the peer
+

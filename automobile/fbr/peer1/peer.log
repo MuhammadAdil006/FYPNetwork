@@ -1,0 +1,57 @@
+[34m2022-12-28 06:15:12.568 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+ Version: 2.1.1
+ Commit SHA: 6393adbb2
+ Go version: go1.14.1
+ OS/Arch: linux/amd64
+ Chaincode:
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+[34m2022-12-28 06:15:12.574 UTC [peer] getLocalAddress -> INFO 002[0m Auto-detected peer address: 10.0.2.15:7060
+[34m2022-12-28 06:15:12.574 UTC [peer] getLocalAddress -> INFO 003[0m Host is 0.0.0.0 , falling back to auto-detected address: 10.0.2.15:7060
+[34m2022-12-28 06:15:12.603 UTC [ledgermgmt] NewLedgerMgr -> INFO 004[0m Initializing LedgerMgr
+[34m2022-12-28 06:15:12.617 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 005[0m DB is empty Setting db format as 2.0
+[34m2022-12-28 06:15:12.617 UTC [fsblkstorage] NewProvider -> INFO 006[0m Creating new file ledger directory at /vagrant/automobile/client/fbr/ledger/ledgersData/chains/chains
+[34m2022-12-28 06:15:12.624 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 007[0m DB is empty Setting db format as 2.0
+[34m2022-12-28 06:15:12.636 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 008[0m DB is empty Setting db format as 2.0
+[34m2022-12-28 06:15:12.637 UTC [ledgermgmt] NewLedgerMgr -> INFO 009[0m Initialized LedgerMgr
+[34m2022-12-28 06:15:12.644 UTC [gossip.service] New -> INFO 00a[0m Initialize gossip with endpoint 10.0.2.15:7060
+[34m2022-12-28 06:15:12.646 UTC [gossip.gossip] New -> INFO 00b[0m Creating gossip service with self membership of Endpoint: , InternalEndpoint: 10.0.2.15:7060, PKI-ID: d6b3e58db19040d747ff9a43358783957bc55e4b8a6fa4ef9706d4b33f70a77a, Metadata: 
+[33m2022-12-28 06:15:12.648 UTC [gossip.gossip] New -> WARN 00c[0m External endpoint is empty, peer will not be accessible outside of its organization
+[34m2022-12-28 06:15:12.649 UTC [gossip.gossip] start -> INFO 00d[0m Gossip instance 10.0.2.15:7060 started
+[34m2022-12-28 06:15:12.651 UTC [lifecycle] InitializeLocalChaincodes -> INFO 00e[0m Initialized lifecycle cache with 0 already installed chaincodes
+[34m2022-12-28 06:15:12.651 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00f[0m Entering computeChaincodeEndpoint with peerHostname: 10.0.2.15
+[34m2022-12-28 06:15:12.651 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 010[0m Exit with ccEndpoint: 127.0.0.1:7085
+[34m2022-12-28 06:15:12.656 UTC [sccapi] DeploySysCC -> INFO 011[0m deploying system chaincode 'lscc'
+[34m2022-12-28 06:15:12.657 UTC [sccapi] DeploySysCC -> INFO 012[0m deploying system chaincode 'cscc'
+[34m2022-12-28 06:15:12.658 UTC [sccapi] DeploySysCC -> INFO 013[0m deploying system chaincode 'qscc'
+[34m2022-12-28 06:15:12.658 UTC [sccapi] DeploySysCC -> INFO 014[0m deploying system chaincode '_lifecycle'
+[34m2022-12-28 06:15:12.658 UTC [nodeCmd] serve -> INFO 015[0m Deployed system chaincodes
+[34m2022-12-28 06:15:12.658 UTC [discovery] NewService -> INFO 016[0m Created with config TLS: false, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[34m2022-12-28 06:15:12.658 UTC [nodeCmd] registerDiscoveryService -> INFO 017[0m Discovery service activated
+[34m2022-12-28 06:15:12.658 UTC [nodeCmd] serve -> INFO 018[0m Starting peer with ID=[peer1], network ID=[dev], address=[10.0.2.15:7060]
+[34m2022-12-28 06:15:12.659 UTC [nodeCmd] serve -> INFO 019[0m Started peer with ID=[peer1], network ID=[dev], address=[10.0.2.15:7060]
+[34m2022-12-28 06:15:12.659 UTC [kvledger] LoadPreResetHeight -> INFO 01a[0m Loading prereset height from path [/vagrant/automobile/client/fbr/ledger/ledgersData/chains]
+[34m2022-12-28 06:15:12.659 UTC [fsblkstorage] preResetHtFiles -> INFO 01b[0m No active channels passed
+[34m2022-12-28 06:15:49.434 UTC [ledgermgmt] CreateLedger -> INFO 01c[0m Creating ledger [automobilechannel] with genesis block
+[34m2022-12-28 06:15:49.435 UTC [fsblkstorage] newBlockfileMgr -> INFO 01d[0m Getting block information from block storage
+[34m2022-12-28 06:15:49.438 UTC [kvledger] CommitLegacy -> INFO 01e[0m [automobilechannel] Committed block [0] with 1 transaction(s) in 1ms (state_validation=0ms block_and_pvtdata_commit=0ms state_commit=0ms) commitHash=[]
+[34m2022-12-28 06:15:49.440 UTC [ledgermgmt] CreateLedger -> INFO 01f[0m Created ledger [automobilechannel] with genesis block
+[34m2022-12-28 06:15:49.445 UTC [gossip.gossip] JoinChan -> INFO 020[0m Joining gossip network of channel automobilechannel with 3 organizations
+[34m2022-12-28 06:15:49.445 UTC [gossip.gossip] learnAnchorPeers -> INFO 021[0m No configured anchor peers of ManufacturerMSP for channel automobilechannel to learn about
+[34m2022-12-28 06:15:49.446 UTC [gossip.gossip] learnAnchorPeers -> INFO 022[0m No configured anchor peers of FbrMSP for channel automobilechannel to learn about
+[34m2022-12-28 06:15:49.446 UTC [gossip.gossip] learnAnchorPeers -> INFO 023[0m No configured anchor peers of ExciseMSP for channel automobilechannel to learn about
+[34m2022-12-28 06:15:49.448 UTC [gossip.state] NewGossipStateProvider -> INFO 024[0m Updating metadata information for channel automobilechannel, current ledger sequence is at = 0, next expected block is = 1
+[34m2022-12-28 06:15:49.449 UTC [endorser] callChaincode -> INFO 025[0m finished chaincode: cscc duration: 18ms channel= txID=6725261f
+[34m2022-12-28 06:15:49.449 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:37272 grpc.code=OK grpc.call_duration=20.055684ms
+[34m2022-12-28 06:15:55.450 UTC [gossip.election] beLeader -> INFO 027[0m d6b3e58db19040d747ff9a43358783957bc55e4b8a6fa4ef9706d4b33f70a77a : Becoming a leader
+[34m2022-12-28 06:15:55.450 UTC [gossip.service] func1 -> INFO 028[0m Elected as a leader, starting delivery service for channel automobilechannel
+[34m2022-12-28 06:15:55.450 UTC [deliveryClient] StartDeliverForChannel -> INFO 029[0m This peer will retrieve blocks from ordering service and disseminate to other peers in the organization for channel automobilechannel
+[34m2022-12-28 06:16:32.426 UTC [nodeCmd] func1 -> INFO 02a[0m Received signal: 15 (terminated)
+[34m2022-12-28 06:16:32.426 UTC [gossip.service] Stop -> INFO 02b[0m Stopping chain automobilechannel
+[34m2022-12-28 06:16:32.426 UTC [gossip.service] Stop -> INFO 02c[0m Stopping leader election for automobilechannel
+[34m2022-12-28 06:16:32.427 UTC [gossip.gossip] Stop -> INFO 02d[0m Stopping gossip
+[34m2022-12-28 06:16:32.427 UTC [gossip.discovery] Stop -> INFO 02e[0m Stopping
+[34m2022-12-28 06:16:32.427 UTC [gossip.discovery] Stop -> INFO 02f[0m Stopped
+[34m2022-12-28 06:16:32.427 UTC [gossip.comm] Stop -> INFO 030[0m Stopping
+[33m2022-12-28 06:16:32.427 UTC [peer.blocksprovider] func1 -> WARN 031[0m Encountered an error reading from deliver stream: rpc error: code = Canceled desc = context canceled channel=automobilechannel orderer-address=localhost:7050
+[34m2022-12-28 06:16:32.428 UTC [gossip.comm] Stop -> INFO 032[0m Stopped
